@@ -3,6 +3,8 @@ flambe-simplebutton
 
 Simple test button and button group for Flambe (Haxe).
 
+![Alt text](http://s27.postimg.org/mrv1naucj/simplebutton.jpg "Example" )
+
 
 ```haxe
 // Button Group
