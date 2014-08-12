@@ -24,6 +24,8 @@ import flambe.display.FillSprite;
 import flambe.display.TextSprite;
 import flambe.display.Font;
 import flambe.input.PointerEvent;
+import flambe.System;
+import flambe.input.MouseCursor;
 
 class SimpleButton
 {
@@ -55,12 +57,34 @@ class SimpleButton
 		textSprite = new TextSprite( font, label );
 		textSprite.centerAnchor();
 		textSprite.setXY( width * .5, height * .5 );
-
+		
         entity.addChild( new Entity().add( sprite ).addChild( new Entity().add( textSprite ) ) );
+
+        // Pointer In
+        sprite.pointerIn.connect( function ( event:PointerEvent ) {
+        	System.mouse.cursor = MouseCursor.Button;
+            sprite.alpha._ = .8;
+            textSprite.alpha._ = .8;
+        });
+        
+        // Pointer Out
+        sprite.pointerOut.connect( function ( event:PointerEvent ) {
+        	System.mouse.cursor = MouseCursor.Default;
+            sprite.alpha._ = 1;
+            textSprite.alpha._ = 1;
+        });
    	}
 
    	public function setXY( x:Float, y:Float ){
    		sprite.setXY( x, y );
    		textSprite.setXY( width * .5, height * .5 );
+   	}
+
+   	public function onClick( onClick:PointerEvent->Void ){
+   		sprite.pointerDown.connect( onClick );
+   	}
+
+   	public function dispose():Void {
+
    	}
 }

@@ -56,7 +56,7 @@ class SimpleButtonGroup
     return button;
   }
 
-  public function render():Void
+  private function render():Void
   {
     if( buttonGroup.length <= 0 ) return;
 
