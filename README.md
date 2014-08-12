@@ -1,12 +1,12 @@
 flambe-simplebutton
 ===================
 
-**SimpleButton** is simple button that's useful when prototyping. 
+**SimpleButton** is a simple button (hence the name) that's useful when prototyping.
 Also included is **SimpleButtonGroup**, which can be used to layout of a collection of SimpleButtons.
 
 ![Alt text](http://s27.postimg.org/mrv1naucj/simplebutton.jpg "Example" )
 
-
+Example:
 ```haxe
 // Button Group
 var simpleButtonGroup:SimpleButtonGroup = new SimpleButtonGroup();   
