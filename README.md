@@ -1,7 +1,8 @@
 flambe-simplebutton
 ===================
 
-Simple test button and button group for Flambe. Tested on both HTML5 and Flash platforms.
+**SimpleButton** is simple button that's useful when prototyping. 
+Also included is **SimpleButtonGroup**, which can be used to layout of a collection of SimpleButtons.
 
 ![Alt text](http://s27.postimg.org/mrv1naucj/simplebutton.jpg "Example" )
 
@@ -25,3 +26,10 @@ simpleButtonGroup.add( new SimpleButton( "Button 2", fontArial ) )
     trace("Button 2 clicked.");
 });
 ```
+
+SimpleButtonGroup supports two different orientations. Vertical and Horizontal.
+```haxe
+simpleButtonGroup.direction = GroupDirection.Horizontal;
+```
+
+Tested on both HTML5 and Flash platforms.
