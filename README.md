@@ -10,21 +10,21 @@ Example:
 ```haxe
 // Button Group
 var simpleButtonGroup:SimpleButtonGroup = new SimpleButtonGroup();   
-simpleButtonGroup.centerAnchor().setXY( System.stage.width * .5, System.stage.height * .5 );   
+simpleButtonGroup.centerAnchor().setXY( System.stage.width * .5, System.stage.height * .5 );
 System.root.addChild( simpleButtonGroup.entity );
 
 // Buttons
-simpleButtonGroup.add( new SimpleButton( "Button 1", fontArial ) )
-            .sprite.pointerDown.connect( function ( event:PointerEvent ) {
-    
-    trace("Button 1 clicked.");
+var button1:SimpleButton = new SimpleButton( "Button 1", fontArial );
+button1.onClick( function( event:PointerEvent ){
+  trace("Button 1 clicked.");
 });
+simpleButtonGroup.add( button1 );
 
-simpleButtonGroup.add( new SimpleButton( "Button 2", fontArial ) )
-            .sprite.pointerDown.connect( function ( event:PointerEvent ) {
-    
-    trace("Button 2 clicked.");
+var button2:SimpleButton = new SimpleButton( "Button 2", fontArial );
+button2.onClick( function( event:PointerEvent ){
+  trace("Button 2 clicked.");
 });
+simpleButtonGroup.add( button2 );
 ```
 
 SimpleButtonGroup supports two different orientations. Vertical and Horizontal.
