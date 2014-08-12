@@ -1,7 +1,7 @@
 flambe-simplebutton
 ===================
 
-Simple test button and button group for Flambe (Haxe).
+Simple test button and button group for Flambe. Tested on both HTML5 and Flash platforms.
 
 ![Alt text](http://s27.postimg.org/mrv1naucj/simplebutton.jpg "Example" )
 
