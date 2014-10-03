@@ -1,5 +1,6 @@
 flambe-simplebutton
 ===================
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/th3d0g/flambe-simplebutton?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 **SimpleButton** is a simple button (hence the name) that's useful when prototyping.
 Also included is **SimpleButtonGroup**, which can be used to layout of a collection of SimpleButtons.
